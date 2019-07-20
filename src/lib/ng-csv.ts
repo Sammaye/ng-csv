@@ -33,8 +33,8 @@ export interface Options {
 export class NgCsv {
   // This is the string formatted data that goes into the CSV file
   csvData: string;
-  // The internal representation of the CSV data, always an array or array of objects
-  private _data: { [k: string]: string|Number } | Array<string|Number>;
+  // The internal representation of the CSV data, always array of objects
+  private _data: { [k: string]: string|Number };
   // These are the CSV options, using the Options interface
   private _options: Options = {
     // Replaces spaces in file names
@@ -63,7 +63,7 @@ export class NgCsv {
    * Set the CSV data, will parse from JSON if string
    * @param data
    */
-  set data(data: { [k: string]: string|Number } | Array<string|Number> | string) {
+  set data(data: { [k: string]: string|Number } | string) {
     this._data = typeof data === 'string' ? JSON.parse(data) : data;
   }
 
@@ -117,7 +117,7 @@ export class NgCsv {
    * @param options
    */
   constructor(
-    data: { [k: string]: string|Number } | Array<string|Number> | string,
+    data: { [k: string]: string|Number } | string,
     filename: string,
     options?: Options
   ) {

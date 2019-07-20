@@ -14,7 +14,7 @@ npm i @sammaye/ng-csv --save
 
 Much of the documentation for the different options can be found directly in the code. It is very well documented and should be easy to read.
 
-Here I will just give a quick exmaple of usage:
+Here I will just give a quick example of usage:
 ```javascript
 new NgCsv(
   [
