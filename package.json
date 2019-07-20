@@ -1,6 +1,6 @@
 {
   "name": "@sammaye/ng-csv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular CSVs",
   "keywords": ["angular", "csv"],
   "homepage": "https://github.com/Sammaye/ng-csv",
